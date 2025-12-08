@@ -7,7 +7,7 @@
 #import pandas
 import pandas as pd
 
-# 1)Création du tableau des données d'ADN
+#1)Création du tableau des données d'ADN
 
 #inerstion les données du tableau
 
