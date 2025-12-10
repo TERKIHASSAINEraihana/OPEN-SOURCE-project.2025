@@ -60,11 +60,14 @@ print("*****calcul de l'ecart-type du pourcentage GC *****")
 ecart_type_gc = df["Pourcentage GC"].std()
 print(f"Pourcentage GC: {ecart_type_gc}","\n\n")
 
+#Calculer l'écart-type de la Longueur 
+print("*****calcul de l'écart-type de la Longueur*****")
+ecart_type_Longueur = df["Longueur"].std()
+print(f"Longueur : {ecart_type_Longueur}","\n\n")
 
-
-
-
-
+#8)Sauvegarde et chargement des données avec pandas
+#Sauvegarder la DataFrame en CSV
+df.to_csv("tableau_données d'ADN.csv", index=False)
 
 
 
