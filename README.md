@@ -49,6 +49,22 @@ print("***** ajout d'une colonne Catégorie GC *****")
 average_gc = df["Pourcentage GC"].apply(lambda GC: "Riche" if GC > 55 else ("Moyen" if 45 <= GC <= 55 else "Faible" )) 
 print(df,"\n\n") 
 
+#6)Ajouter une colonne donnant le nombre de 'G' dans chaque séquence 
+print("*****une colonne donnant le nombre de 'G' dans chaque séquence ******") 
+df["nombre de G"] = df["séquence"].str.count("G")
+print(df,"\n\n")
+
+#7)Calculer l'écart-type
+#Calculer l'écart- type du pourcentage GC
+print("*****calcul de l'ecart-type du pourcentage GC *****")
+ecart_type_gc = df["Pourcentage GC"].std()
+print(f"Pourcentage GC: {ecart_type_gc}","\n\n")
+
+
+
+
+
+
 
 
 
