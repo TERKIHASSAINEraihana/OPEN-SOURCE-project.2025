@@ -24,7 +24,19 @@ df = pd.DataFrame(data)
 print("===== Tableau données d'ADN =====") 
 print(df,"\n\n") 
 
+#2) operation sur le tableau 
+print("===== operation =====\n\n")
 
+# Sélection et affichage de la colonne Longueur 
+
+print("*** Colonne Longueur ***")
+Longueur = df["Longueur"]
+print(Longueur,"\n\n")
+
+#3)Filtrer les séquences dont la Longueur > 10
+print("*****séquence avec Longueur > 10 *****")
+Filtred_df = df[df["Longueur"]> 10]
+print(Filtred_df,"\n\n")
 
 
 
