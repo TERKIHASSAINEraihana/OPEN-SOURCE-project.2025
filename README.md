@@ -51,7 +51,7 @@ print(df,"\n\n")
 
 #6)Ajouter une colonne donnant le nombre de 'G' dans chaque séquence 
 print("*****une colonne donnant le nombre de 'G' dans chaque séquence ******") 
-df["nombre de G"] = df["séquence"].str.count("G")
+df["nombre de G"] = df["séquences"].str.count("G")
 print(df,"\n\n")
 
 #7)Calculer l'écart-type
